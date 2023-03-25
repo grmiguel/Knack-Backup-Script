@@ -4,6 +4,7 @@ This script allows you to back up data from a Knack app by exporting all records
 # Prerequisites
 Before using the script, you will need to obtain the API keys for your Knack app and save them in a JSON file called Knack API Keys.json in a directory above the script directory. The JSON file should have the following format:
 
+```json
 {
   "API_KEYS": {
     "app1": {
@@ -18,6 +19,7 @@ Before using the script, you will need to obtain the API keys for your Knack app
     }
   }
 }
+```
 
 You can obtain the API keys from the Knack builder interface by going to the "Settings" > "API & Code" page and generating a new REST API key. Make sure to copy the Application ID and API key for each app you want to back up and add them to the JSON file.
 
