@@ -143,9 +143,6 @@ def sanitize_string_for_path(input_string):
 # MAIN SCRIPT
 # ============================================
 
-# Set up the script environment
-log_file_path = "../Log.txt"
-
 def main():
 
     # Record the start of the backup process in the log
@@ -161,3 +158,10 @@ def main():
 
     # Record the completion of the daily backup in the log
     write_to_log("*********** Daily Backup Completed", log_file_path)
+
+# ============================================
+# ENTRY POINT TO THE SCRIPT - calls the main() function when the script is executed
+# ============================================
+
+log_file_path = "../Log.txt" # Global variable for the log file path
+if __name__ == "__main__": main() # Run the main function
